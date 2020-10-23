@@ -17,3 +17,6 @@ brew update && brew upgrade
 
 # Install java
 brew install openjdk
+
+# IDE
+brew cask install intellij-idea

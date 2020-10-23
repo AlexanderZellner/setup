@@ -14,3 +14,6 @@ done
 
 # Update hombrew
 brew update && brew upgrade
+
+# Install java
+brew install openjdk

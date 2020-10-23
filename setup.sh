@@ -11,3 +11,6 @@ while true; do
 done
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+# Update hombrew
+brew update && brew upgrade

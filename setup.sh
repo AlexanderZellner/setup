@@ -31,3 +31,10 @@ echo ".DS_Store" >> ~/.gitignore
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 echo "set number relativenumber" >> ~/.vimrc
+
+
+# Setup zsh
+brew install powerlevel10k
+echo 'source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+powerlevel10k configure
+brew install zsh-syntax-highlighting

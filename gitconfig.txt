@@ -1,0 +1,29 @@
+
+[core]
+	excludesfile = "standardPath"/.gitignore
+[alias]
+	co = checkout
+	c = commit
+	s = status
+	b = branch
+	bl = branch --list
+	a = !git add . && git status
+	au = !git add -u && git status
+	cm = commit -m 
+	uc = !git reset --soft HEAD^ && git reset HEAD .
+	d = diff
+	rh = reset HEAD
+	rha = reset --hard
+    	ll   = log --stat --abbrev-commit
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	llg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all	
+	cob = checkout -b
+	com = checkout master
+	cod = checkout development
+	pr = pull --rebase
+	ps = push
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+	pssup = !git push --set-upstream
+
+[color]
+	ui = auto
